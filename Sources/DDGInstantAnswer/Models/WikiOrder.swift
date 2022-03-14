@@ -1,8 +1,8 @@
 import Foundation
 
 public enum WikiOrder: Codable {
-    public case integer(Int)
-    public case string(String)
+    case integer(Int)
+    case string(String)
 
     public init(from decoder: Decoder) throws {
         let container = try decoder.singleValueContainer()

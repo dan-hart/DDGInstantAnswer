@@ -34,11 +34,11 @@ public class JSONNull: Codable, Hashable {
 public class JSONCodingKey: CodingKey {
     public let key: String
 
-    required init?(intValue: Int) {
+    public required init?(intValue: Int) {
         return nil
     }
 
-    required init?(stringValue: String) {
+    public required init?(stringValue: String) {
         key = stringValue
     }
 

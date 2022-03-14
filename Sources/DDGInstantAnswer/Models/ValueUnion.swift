@@ -1,8 +1,8 @@
 import Foundation
 
 public enum ValueUnion: Codable {
-    public case string(String)
-    public case valueClass(ValueClass)
+    case string(String)
+    case valueClass(ValueClass)
 
     public init(from decoder: Decoder) throws {
         let container = try decoder.singleValueContainer()
