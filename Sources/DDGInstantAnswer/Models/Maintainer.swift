@@ -7,5 +7,5 @@ import Foundation
 
 // MARK: - Maintainer
 public struct Maintainer: Codable {
-    var github: String?
+    public var github: String?
 }

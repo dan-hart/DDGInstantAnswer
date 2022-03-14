@@ -7,28 +7,28 @@ import Foundation
 
 // MARK: - AnswerMeta
 public struct AnswerMeta: Codable {
-    var attribution, blockgroup, createdDate: JSONNull?
-    var metaDescription: String?
-    var designer, devDate: JSONNull?
-    var devMilestone: String?
-    var developer: [Developer]?
-    var exampleQuery, id: String?
-    var isStackexchange: JSONNull?
-    var jsCallbackName: String?
-    var liveDate: JSONNull?
-    var maintainer: Maintainer?
-    var name, perlModule: String?
-    var producer: JSONNull?
-    var productionState, repo, signalFrom, srcDomain: String?
-    var srcID: Int?
-    var srcName: String?
-    var srcOptions: SrcOptions?
-    var srcURL: JSONNull?
-    var status, tab: String?
-    var topic: [String]?
-    var unsafe: Int?
+    public var attribution, blockgroup, createdDate: JSONNull?
+    public var metaDescription: String?
+    public var designer, devDate: JSONNull?
+    public var devMilestone: String?
+    public var developer: [Developer]?
+    public var exampleQuery, id: String?
+    public var isStackexchange: JSONNull?
+    public var jsCallbackName: String?
+    public var liveDate: JSONNull?
+    public var maintainer: Maintainer?
+    public var name, perlModule: String?
+    public var producer: JSONNull?
+    public var productionState, repo, signalFrom, srcDomain: String?
+    public var srcID: Int?
+    public var srcName: String?
+    public var srcOptions: SrcOptions?
+    public var srcURL: JSONNull?
+    public var status, tab: String?
+    public var topic: [String]?
+    public var unsafe: Int?
 
-    enum CodingKeys: String, CodingKey {
+    public enum CodingKeys: String, CodingKey {
         case attribution, blockgroup
         case createdDate = "created_date"
         case metaDescription = "description"

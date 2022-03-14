@@ -7,11 +7,11 @@ import Foundation
 
 // MARK: - Content
 public struct Content: Codable {
-    var dataType, label: String?
-    var value: ValueUnion?
-    var wikiOrder: WikiOrder?
+    public var dataType, label: String?
+    public var value: ValueUnion?
+    public var wikiOrder: WikiOrder?
 
-    enum CodingKeys: String, CodingKey {
+    public enum CodingKeys: String, CodingKey {
         case dataType = "data_type"
         case label, value
         case wikiOrder = "wiki_order"

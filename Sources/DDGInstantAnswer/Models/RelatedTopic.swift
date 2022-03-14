@@ -7,11 +7,11 @@ import Foundation
 
 // MARK: - RelatedTopic
 public struct RelatedTopic: Codable {
-    var firstURL: String?
-    var icon: Icon?
-    var result, text: String?
+    public var firstURL: String?
+    public var icon: Icon?
+    public var result, text: String?
 
-    enum CodingKeys: String, CodingKey {
+    public enum CodingKeys: String, CodingKey {
         case firstURL = "FirstURL"
         case icon = "Icon"
         case result = "Result"

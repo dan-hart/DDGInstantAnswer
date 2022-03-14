@@ -7,6 +7,6 @@ import Foundation
 
 // MARK: - Developer
 public struct Developer: Codable {
-    var name, type: String?
-    var url: String?
+    public var name, type: String?
+    public var url: String?
 }

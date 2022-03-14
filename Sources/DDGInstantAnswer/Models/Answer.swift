@@ -7,19 +7,19 @@ import Foundation
 
 // MARK: - Answer
 public struct Answer: Codable {
-    var abstract, abstractSource, abstractText: String?
-    var abstractURL: String?
-    var answer, answerType, definition, definitionSource: String?
-    var definitionURL, entity, heading, image: String?
-    var imageHeight, imageIsLogo, imageWidth: Int?
-    var infobox: Infobox?
-    var redirect: String?
-    var relatedTopics: [RelatedTopic]?
-    var results: [JSONAny]?
-    var type: String?
-    var meta: AnswerMeta?
+    public var abstract, abstractSource, abstractText: String?
+    public var abstractURL: String?
+    public var answer, answerType, definition, definitionSource: String?
+    public var definitionURL, entity, heading, image: String?
+    public var imageHeight, imageIsLogo, imageWidth: Int?
+    public var infobox: Infobox?
+    public var redirect: String?
+    public var relatedTopics: [RelatedTopic]?
+    public var results: [JSONAny]?
+    public var type: String?
+    public var meta: AnswerMeta?
 
-    enum CodingKeys: String, CodingKey {
+    public enum CodingKeys: String, CodingKey {
         case abstract = "Abstract"
         case abstractSource = "AbstractSource"
         case abstractText = "AbstractText"

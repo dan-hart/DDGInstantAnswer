@@ -7,15 +7,15 @@ import Foundation
 
 // MARK: - SrcOptions
 public struct SrcOptions: Codable {
-    var directory: String?
-    var isFanon, isMediawiki, isWikipedia: Int?
-    var language, minAbstractLength: String?
-    var skipAbstract, skipAbstractParen: Int?
-    var skipEnd: String?
-    var skipIcon, skipImageName: Int?
-    var skipQr, sourceSkip, srcInfo: String?
+    public var directory: String?
+    public var isFanon, isMediawiki, isWikipedia: Int?
+    public var language, minAbstractLength: String?
+    public var skipAbstract, skipAbstractParen: Int?
+    public var skipEnd: String?
+    public var skipIcon, skipImageName: Int?
+    public var skipQr, sourceSkip, srcInfo: String?
 
-    enum CodingKeys: String, CodingKey {
+    public enum CodingKeys: String, CodingKey {
         case directory
         case isFanon = "is_fanon"
         case isMediawiki = "is_mediawiki"

@@ -1,10 +1,10 @@
 import Foundation
 
 public enum ValueUnion: Codable {
-    case string(String)
-    case valueClass(ValueClass)
+    public case string(String)
+    public case valueClass(ValueClass)
 
-    init(from decoder: Decoder) throws {
+    public init(from decoder: Decoder) throws {
         let container = try decoder.singleValueContainer()
         if let x = try? container.decode(String.self) {
             self = .string(x)
@@ -17,7 +17,7 @@ public enum ValueUnion: Codable {
         throw DecodingError.typeMismatch(ValueUnion.self, DecodingError.Context(codingPath: decoder.codingPath, debugDescription: "Wrong type for ValueUnion"))
     }
 
-    func encode(to encoder: Encoder) throws {
+    public func encode(to encoder: Encoder) throws {
         var container = encoder.singleValueContainer()
         switch self {
         case .string(let x):

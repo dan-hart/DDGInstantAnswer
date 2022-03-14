@@ -7,9 +7,9 @@ import Foundation
 
 // MARK: - Icon
 public struct Icon: Codable {
-    var height, url, width: String?
+    public var height, url, width: String?
 
-    enum CodingKeys: String, CodingKey {
+    public enum CodingKeys: String, CodingKey {
         case height = "Height"
         case url = "URL"
         case width = "Width"

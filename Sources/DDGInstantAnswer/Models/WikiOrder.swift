@@ -1,10 +1,10 @@
 import Foundation
 
 public enum WikiOrder: Codable {
-    case integer(Int)
-    case string(String)
+    public case integer(Int)
+    public case string(String)
 
-    init(from decoder: Decoder) throws {
+    public init(from decoder: Decoder) throws {
         let container = try decoder.singleValueContainer()
         if let x = try? container.decode(Int.self) {
             self = .integer(x)
@@ -17,7 +17,7 @@ public enum WikiOrder: Codable {
         throw DecodingError.typeMismatch(WikiOrder.self, DecodingError.Context(codingPath: decoder.codingPath, debugDescription: "Wrong type for WikiOrder"))
     }
 
-    func encode(to encoder: Encoder) throws {
+    public func encode(to encoder: Encoder) throws {
         var container = encoder.singleValueContainer()
         switch self {
         case .integer(let x):

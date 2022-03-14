@@ -7,10 +7,10 @@ import Foundation
 
 // MARK: - ValueClass
 public struct ValueClass: Codable {
-    var entityType, id: String?
-    var numericID: Int?
+    public var entityType, id: String?
+    public var numericID: Int?
 
-    enum CodingKeys: String, CodingKey {
+    public enum CodingKeys: String, CodingKey {
         case entityType = "entity-type"
         case id
         case numericID = "numeric-id"

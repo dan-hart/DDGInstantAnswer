@@ -7,9 +7,9 @@ import Foundation
 
 // MARK: - MetaElement
 public struct MetaElement: Codable {
-    var dataType, label, value: String?
+    public var dataType, label, value: String?
 
-    enum CodingKeys: String, CodingKey {
+    public enum CodingKeys: String, CodingKey {
         case dataType = "data_type"
         case label, value
     }
