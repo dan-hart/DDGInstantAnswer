@@ -6,7 +6,7 @@
 import Foundation
 
 // MARK: - Content
-struct Content: Codable {
+public struct Content: Codable {
     var dataType, label: String?
     var value: ValueUnion?
     var wikiOrder: WikiOrder?

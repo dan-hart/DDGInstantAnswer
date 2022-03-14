@@ -1,6 +1,6 @@
 import Foundation
 
-enum WikiOrder: Codable {
+public enum WikiOrder: Codable {
     case integer(Int)
     case string(String)
 

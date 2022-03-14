@@ -6,7 +6,7 @@
 import Foundation
 
 // MARK: - MetaElement
-struct MetaElement: Codable {
+public struct MetaElement: Codable {
     var dataType, label, value: String?
 
     enum CodingKeys: String, CodingKey {

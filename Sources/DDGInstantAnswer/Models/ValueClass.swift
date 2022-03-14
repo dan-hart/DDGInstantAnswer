@@ -6,7 +6,7 @@
 import Foundation
 
 // MARK: - ValueClass
-struct ValueClass: Codable {
+public struct ValueClass: Codable {
     var entityType, id: String?
     var numericID: Int?
 

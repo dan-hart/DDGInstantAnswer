@@ -6,7 +6,7 @@
 import Foundation
 
 // MARK: - Answer
-struct Answer: Codable {
+public struct Answer: Codable {
     var abstract, abstractSource, abstractText: String?
     var abstractURL: String?
     var answer, answerType, definition, definitionSource: String?

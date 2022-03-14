@@ -6,7 +6,7 @@
 import Foundation
 
 // MARK: - Infobox
-struct Infobox: Codable {
+public struct Infobox: Codable {
     var content: [Content]?
     var meta: [MetaElement]?
 }

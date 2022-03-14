@@ -6,6 +6,6 @@
 import Foundation
 
 // MARK: - Maintainer
-struct Maintainer: Codable {
+public struct Maintainer: Codable {
     var github: String?
 }

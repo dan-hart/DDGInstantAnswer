@@ -6,7 +6,7 @@
 import Foundation
 
 // MARK: - RelatedTopic
-struct RelatedTopic: Codable {
+public struct RelatedTopic: Codable {
     var firstURL: String?
     var icon: Icon?
     var result, text: String?

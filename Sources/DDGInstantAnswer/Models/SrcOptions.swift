@@ -6,7 +6,7 @@
 import Foundation
 
 // MARK: - SrcOptions
-struct SrcOptions: Codable {
+public struct SrcOptions: Codable {
     var directory: String?
     var isFanon, isMediawiki, isWikipedia: Int?
     var language, minAbstractLength: String?

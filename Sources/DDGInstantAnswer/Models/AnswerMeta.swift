@@ -6,7 +6,7 @@
 import Foundation
 
 // MARK: - AnswerMeta
-struct AnswerMeta: Codable {
+public struct AnswerMeta: Codable {
     var attribution, blockgroup, createdDate: JSONNull?
     var metaDescription: String?
     var designer, devDate: JSONNull?

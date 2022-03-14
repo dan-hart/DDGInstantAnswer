@@ -6,7 +6,7 @@
 import Foundation
 
 // MARK: - Icon
-struct Icon: Codable {
+public struct Icon: Codable {
     var height, url, width: String?
 
     enum CodingKeys: String, CodingKey {

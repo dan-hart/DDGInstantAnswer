@@ -1,6 +1,6 @@
 import Foundation
 
-enum ValueUnion: Codable {
+public enum ValueUnion: Codable {
     case string(String)
     case valueClass(ValueClass)
 

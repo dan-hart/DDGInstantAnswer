@@ -14,7 +14,7 @@ public class DDGInstantAnswer {
     }
     
     // MARK: - Functions
-    static func query(_ text: String) async throws -> Answer {
+    public static func query(_ text: String) async throws -> Answer {
         guard let url = URL(string: "\(baseURL)\(text.urlEncoded)\(queryParameters)") else { throw DDGInstantAnswerError.invalidURL }
         
         let (data, _) = try await URLSession.shared.data(from: url, delegate: nil)
