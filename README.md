@@ -1,3 +1,4 @@
 # DDGInstantAnswer
 
-A description of this package.
+Swift Package for DuckDuckGo's [Instant Answer API](https://duckduckgo.com/api)
+
