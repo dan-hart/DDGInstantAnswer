@@ -4,7 +4,7 @@ public enum ValueUnion: Codable {
     case string(String)
     case valueClass(ValueClass)
     
-    var description: String? {
+    public var description: String? {
         switch self {
         case .string(let x):
             return x
