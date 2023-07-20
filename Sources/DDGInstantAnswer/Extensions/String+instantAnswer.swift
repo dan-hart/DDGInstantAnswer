@@ -8,7 +8,7 @@
 import Foundation
 
 extension String {
-    var instantAnswer: Answer? {
+    public var instantAnswer: Answer? {
         get async {
             try? await DDGInstantAnswer.query(self)
         }
