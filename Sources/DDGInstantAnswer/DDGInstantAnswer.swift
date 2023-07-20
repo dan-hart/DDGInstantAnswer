@@ -4,7 +4,8 @@ import SwifterSwift
 /// Duck Duck Go Instant Answer API
 public class DDGInstantAnswer {
     static let baseURL = "https://api.duckduckgo.com/?q="
-    static let queryParameters = "&format=json&pretty=1&atb=v287-2"
+    // Parameters, updated 07/20/2023
+    static let queryParameters = "&format=json&no_html=1&no_redirect=0&skip_disambig=1&pretty=1&atb=v287-2"
     
     init() { }
     
