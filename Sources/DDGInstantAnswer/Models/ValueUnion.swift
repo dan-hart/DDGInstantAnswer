@@ -3,6 +3,15 @@ import Foundation
 public enum ValueUnion: Codable {
     case string(String)
     case valueClass(ValueClass)
+    
+    var description: String? {
+        switch self {
+        case .string(let x):
+            return x
+        case .valueClass(let x):
+            return x.entityType
+        }
+    }
 
     public init(from decoder: Decoder) throws {
         let container = try decoder.singleValueContainer()
