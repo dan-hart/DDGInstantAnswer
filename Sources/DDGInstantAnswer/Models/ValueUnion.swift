@@ -12,6 +12,15 @@ public enum ValueUnion: Codable {
             return x.entityType
         }
     }
+    
+    public var isValueClass: Bool {
+        switch self {
+        case .valueClass:
+            return true
+        default:
+            return false
+        }
+    }
 
     public init(from decoder: Decoder) throws {
         let container = try decoder.singleValueContainer()
